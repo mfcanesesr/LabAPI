@@ -6,6 +6,7 @@ let postAlumnos = async (req, res) => {
     const Data = req.body;
     let RandomNumber;
 
+    //API para generar números random
     let config = {
         method: 'get',
         maxBodyLength: Infinity,
@@ -22,6 +23,7 @@ let postAlumnos = async (req, res) => {
         return;
     });
 
+    //Json a guardar en MongoDB
     let NewInsertAlumno = new alumnos({ 
         PrimerAlumno: Data.PrimerAlumno,
         SegundoAlumno: Data.SegundoAlumno,
