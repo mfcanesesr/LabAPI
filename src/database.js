@@ -8,10 +8,10 @@ class Database {
 _connect() {
      mongoose.connect(`mongodb+srv://mfcanesesr:api2024@clusterapi.m28hhwz.mongodb.net/?retryWrites=true&w=majority`)
        .then(() => {
-         console.log('Database connection successful')
+         console.log('Database connected (:')
        })
        .catch(err => {
-         console.error('Database connection error')
+         console.error('Database not connected ):')
        })
   }
 }
